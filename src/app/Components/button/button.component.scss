@@ -1,0 +1,33 @@
+.doc-page {
+  max-width: 900px;
+}
+
+.doc-section {
+  margin-top: 40px;
+}
+
+.demo-box {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.code-box {
+  position: relative;
+  background: #0f172a;
+  color: #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.code-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

@@ -1,0 +1,81 @@
+
+
+
+<div class="doc-page">
+
+  <!-- Title -->
+  <h1>Button</h1>
+  <p class="description">
+    Buttons allow users to take actions and make choices with a single click.
+    Helix UI buttons are built using Bootstrap styles and support multiple
+    variants, states, and sizes.
+  </p>
+
+  <!-- SECTION 1: Live Demo -->
+  <section class="doc-section">
+    <h3>Live Demo</h3>
+
+    <div class="demo-box">
+      <button class="btn btn-primary me-2 mb-2">Primary</button>
+      <button class="btn btn-secondary me-2 mb-2">Secondary</button>
+      <button class="btn btn-success me-2 mb-2">Success</button>
+      <button class="btn btn-danger me-2 mb-2">Danger</button>
+      <button class="btn btn-warning me-2 mb-2">Warning</button>
+      <button class="btn btn-info me-2 mb-2">Info</button>
+      <button class="btn btn-dark me-2 mb-2">Dark</button>
+      <button class="btn btn-light me-2 mb-2">Light</button>
+      <button class="btn btn-outline-primary me-2 mb-2">Outline</button>
+      <button class="btn btn-primary me-2 mb-2" disabled>Disabled</button>
+    </div>
+  </section>
+
+  <!-- SECTION 2: Code Snippet -->
+  <section class="doc-section">
+    <h3>Usage</h3>
+
+    <div class="code-box">
+      <pre><code>{{ buttonCode }}</code></pre>
+      <button class="btn btn-sm btn-outline-secondary copy-btn"
+              (click)="copyCode(buttonCode)">
+        Copy
+      </button>
+    </div>
+  </section>
+
+  <!-- SECTION 3: API Table -->
+  <section class="doc-section">
+    <h3>API Reference</h3>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>class</td>
+          <td>Bootstrap button class</td>
+          <td>string</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>Disables the button</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>Button type</td>
+          <td>button | submit</td>
+          <td>button</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>

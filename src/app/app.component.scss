@@ -1,0 +1,33 @@
+
+
+.content {
+  flex: 1;
+   padding: 24px;
+  background: #f8fafc;
+  min-height: 100vh;
+  margin-left: 260px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;   /* 👈 ye MUST hai */
+}
+
+@media (max-width: 768px) {
+  // .content {
+  //   margin-left: 0;
+  // }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

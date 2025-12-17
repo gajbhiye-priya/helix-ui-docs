@@ -1,0 +1,22 @@
+<div class="sidebar" [class.collapsed]="isCollapsed">
+
+  <div class="logo-section">
+    
+    <span class="title" *ngIf="!isCollapsed">Helix UI</span>
+    <button class="toggle-btn" (click)="toggleSidebar()">☰</button>
+  </div>
+
+  <nav class="menu">
+    <a
+      class="menu-item"
+      *ngFor="let item of menu"
+      [routerLink]="item.route"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <span class="icon">{{ item.icon }}</span>
+      <span class="text" *ngIf="!isCollapsed">{{ item.label }}</span>
+    </a>
+  </nav>
+
+</div>

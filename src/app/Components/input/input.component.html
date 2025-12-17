@@ -1,0 +1,167 @@
+<div class="container">
+
+  <h2 class="mb-4">Input Group Documentation</h2>
+
+  <p>
+  Input Groups in Helix UI allow you to extend form controls by adding
+  text, icons, or buttons before or after inputs. This helps users
+  understand the expected value and improves usability.
+</p>
+
+  <h4>Basic Example</h4>
+  <div class="input-group mb-3">
+    <span class="input-group-text"></span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username">
+    <span class="input-group-text">example.com</span>
+  </div>
+
+
+  <label>Your vanity URL</label>
+  <div class="input-group mb-3">
+    <span class="input-group-text">https://example.com/users/</span>
+    <input type="text" class="form-control">
+  </div>
+
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control">
+    <span class="input-group-text">.00</span>
+  </div>
+
+
+  <h4>Multiple Inputs</h4>
+  <div class="input-group mb-3">
+    <span class="input-group-text">First & Last Name</span>
+    <input type="text" class="form-control" placeholder="First name">
+    <input type="text" class="form-control" placeholder="Last name">
+  </div>
+
+ 
+  <h4>Checkbox Addon</h4>
+  <div class="input-group mb-3">
+    <span class="input-group-text">
+      <input type="checkbox">
+    </span>
+    <input type="text" class="form-control" placeholder="Text input">
+  </div>
+
+
+  <h4>Button Addon</h4>
+  <div class="input-group mb-3">
+    <button class="btn btn-secondary">Button</button>
+    <input type="text" class="form-control" placeholder="Button addon input">
+  </div>
+
+
+  <h4>File Input</h4>
+  <div class="input-group mb-3">
+    <span class="input-group-text">Upload</span>
+    <input type="file" class="form-control">
+  </div>
+</div>
+
+<div class="doc-page">
+
+
+  <!-- Live Demo -->
+  <section class="doc-section">
+    <h2>Live Demo</h2>
+
+    <div class="demo-box">
+      <div class="mb-3">
+        <label class="form-label">Basic Input</label>
+        <input type="text" class="form-control" placeholder="Enter text">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">With Prefix</label>
+        <div class="input-group">
+          <span class="input-group-text"> </span>
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">With Suffix</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Email">
+          <span class="input-group-text">example.com</span>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Error State</label>
+        <input type="text" class="form-control is-invalid" placeholder="Invalid input">
+        <div class="invalid-feedback">
+          This field is required
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Snippet -->
+  <section class="doc-section">
+    <h2>Usage</h2>
+
+    <pre><code>
+&lt;input type="text" class="form-control" placeholder="Enter text"&gt;
+
+&lt;div class="input-group"&gt;
+  &lt;span class="input-group-text"&gt; &lt;/span&gt;
+  &lt;input type="text" class="form-control" placeholder="Username"&gt;
+&lt;/div&gt;
+
+&lt;input type="text" class="form-control is-invalid"&gt;
+&lt;div class="invalid-feedback"&gt;This field is required&lt;/div&gt;
+    </code></pre>
+  </section>
+
+  <!-- API Table -->
+  <section class="doc-section">
+    <h2>API Reference</h2>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>type</td>
+          <td>Input type</td>
+          <td>text | email | password</td>
+          <td>text</td>
+        </tr>
+        <tr>
+          <td>placeholder</td>
+          <td>Hint text</td>
+          <td>string</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>disabled</td>
+          <td>Disable input</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+        <tr>
+          <td>invalid</td>
+          <td>Error state</td>
+          <td>boolean</td>
+          <td>false</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>

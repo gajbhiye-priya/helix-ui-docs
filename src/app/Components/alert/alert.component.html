@@ -1,0 +1,138 @@
+<div class="container-fluid px-4">
+
+  <!-- TITLE -->
+  <h1 class="mb-3">Alert</h1>
+  <p class="text-muted">
+    Angular Alert component provides contextual feedback messages for common user actions.
+  </p>
+
+  <hr>
+
+  <!-- COLORS -->
+  <h3 class="mt-4">Colors</h3>
+  <p>Use contextual classes to style alerts.</p>
+
+  <div class="alert alert-primary">Primary alert</div>
+  <div class="alert alert-secondary">Secondary alert</div>
+  <div class="alert alert-success">Success alert</div>
+  <div class="alert alert-danger">Danger alert</div>
+  <div class="alert alert-warning">Warning alert</div>
+  <div class="alert alert-info">Info alert</div>
+  <div class="alert alert-light">Light alert</div>
+  <div class="alert alert-dark">Dark alert</div>
+
+  <!-- CODE -->
+  <pre class="code-block">
+&lt;div class="alert alert-primary"&gt;Primary alert&lt;/div&gt;
+&lt;div class="alert alert-success"&gt;Success alert&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;Danger alert&lt;/div&gt;
+  </pre>
+
+  <hr>
+
+  <!-- LINK ALERT -->
+  <h3>Alert with Link</h3>
+
+  <div class="alert alert-primary">
+    This is a primary alert with
+    <a href="#" class="alert-link">an example link</a>.
+  </div>
+
+  <pre class="code-block">
+&lt;div class="alert alert-primary"&gt;
+  This is a primary alert with
+  &lt;a href="#" class="alert-link"&gt;example link&lt;/a&gt;
+&lt;/div&gt;
+  </pre>
+
+  <hr>
+
+  <!-- ADDITIONAL CONTENT -->
+  <h3>Additional Content</h3>
+
+  <div class="alert alert-success">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>You successfully read this important alert message.</p>
+    <hr>
+    <p class="mb-0">Use margin utilities for spacing.</p>
+  </div>
+
+  <pre class="code-block">
+&lt;div class="alert alert-success"&gt;
+  &lt;h4 class="alert-heading"&gt;Well done!&lt;/h4&gt;
+  &lt;p&gt;Message text&lt;/p&gt;
+  &lt;hr&gt;
+  &lt;p class="mb-0"&gt;Footer text&lt;/p&gt;
+&lt;/div&gt;
+  </pre>
+
+  <hr>
+
+  <!-- DISMISSIBLE -->
+  <h3>Dismissible Alert</h3>
+
+  <div *ngIf="showDismissible" class="alert alert-warning alert-dismissible fade show">
+    This alert can be dismissed.
+    <button type="button" class="btn-close" (click)="toggleAlert()"></button>
+  </div>
+
+  <button class="btn btn-secondary" (click)="toggleAlert()">
+    Toggle Alert
+  </button>
+
+  <pre class="code-block">
+&lt;div class="alert alert-warning alert-dismissible fade show"&gt;
+  Dismissible alert
+  &lt;button class="btn-close"&gt;&lt;/button&gt;
+&lt;/div&gt;
+  </pre>
+
+  <hr>
+
+  <!-- ICON ALERT -->
+  <h3>Alert with Icon</h3>
+
+  <div class="alert alert-info d-flex align-items-center">
+    <span class="me-2">ℹ️</span>
+    This is an alert with icon
+  </div>
+
+  <pre class="code-block">
+&lt;div class="alert alert-info d-flex"&gt;
+  &lt;span&gt;ℹ️&lt;/span&gt; Alert with icon
+&lt;/div&gt;
+  </pre>
+
+  <hr>
+
+  <!-- API TABLE -->
+  <h3>API Reference</h3>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Property</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>color</td>
+        <td>string</td>
+        <td>Sets alert color (primary, success, danger...)</td>
+      </tr>
+      <tr>
+        <td>dismissible</td>
+        <td>boolean</td>
+        <td>Shows close button</td>
+      </tr>
+      <tr>
+        <td>visible</td>
+        <td>boolean</td>
+        <td>Controls alert visibility</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
